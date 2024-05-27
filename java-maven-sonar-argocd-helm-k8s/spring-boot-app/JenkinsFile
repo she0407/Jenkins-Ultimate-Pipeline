@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'she0407/maven-riya-docker-agent:v1'
+      image 'she0407/maven-she-docker-agent:v1'
       args '--user root -v /var/run/docker.sock:/var/run/docker.sock' // mount Docker socket to access the host's Docker daemon
     }
   }
